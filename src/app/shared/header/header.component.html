@@ -1,0 +1,102 @@
+<!-- <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav> -->
+
+  <div class="topbar d-flex align-items-center" id="header">
+    <nav class="navbar navbar-expand custom_navbar">
+        <div class="mobile-toggle-menu">
+            <svg fill="#000000" width="24px" height="24px" viewBox="0 0 36 36" version="1.1"  preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path class="clr-i-outline clr-i-outline-path-1" d="M32,29H4a1,1,0,0,1,0-2H32a1,1,0,0,1,0,2Z"></path><path class="clr-i-outline clr-i-outline-path-2" d="M32,19H4a1,1,0,0,1,0-2H32a1,1,0,0,1,0,2Z"></path><path class="clr-i-outline clr-i-outline-path-3" d="M32,9H4A1,1,0,0,1,4,7H32a1,1,0,0,1,0,2Z"></path>
+                <rect x="0" y="0" width="36" height="36" fill-opacity="0"/>
+            </svg>
+        </div>
+        <div class="search-bar flex-grow-1">
+            <div class="position-relative search-bar-box">
+                <input type="text" placeholder="Type to search..." class="form-control search-control">
+                <span class="position-absolute top-50 search-show translate-middle-y">
+                    <svg fill="#000000" width="24px" height="24px" viewBox="0 0 36 36" version="1.1"  preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path class="clr-i-outline clr-i-outline-path-1" d="M16.33,5.05A10.95,10.95,0,1,1,5.39,16,11,11,0,0,1,16.33,5.05m0-2.05a13,13,0,1,0,13,13,13,13,0,0,0-13-13Z"></path><path class="clr-i-outline clr-i-outline-path-2" d="M35,33.29l-7.37-7.42-1.42,1.41,7.37,7.42A1,1,0,1,0,35,33.29Z"></path>
+                        <rect x="0" y="0" width="36" height="36" fill-opacity="0"/>
+                    </svg>
+                </span>
+            </div>
+        </div>
+        <div  class="top-menu ms-auto">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item dropdown dropdown-large">
+                    <a href="#">
+                        <div class="me-4">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" id="dashboard" data-name="Line Color" style="stroke: #000;"
+                                xmlns="http://www.w3.org/2000/svg" class="icon line-color">
+                                <path id="secondary"
+                                    d="M21,7V4a1,1,0,0,0-1-1H15a1,1,0,0,0-1,1V7a1,1,0,0,0,1,1h5A1,1,0,0,0,21,7ZM10,20V17a1,1,0,0,0-1-1H4a1,1,0,0,0-1,1v3a1,1,0,0,0,1,1H9A1,1,0,0,0,10,20Z"
+                                    style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path>
+                                <path id="primary"
+                                    d="M9,12H4a1,1,0,0,1-1-1V4A1,1,0,0,1,4,3H9a1,1,0,0,1,1,1v7A1,1,0,0,1,9,12Zm12,8V13a1,1,0,0,0-1-1H15a1,1,0,0,0-1,1v7a1,1,0,0,0,1,1h5A1,1,0,0,0,21,20Z"
+                                    style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown dropdown-large">
+                    <a href="#">
+                        <div class="me-4">
+                            <svg width="24px" height="24px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#000" d="M9.98546213,0 C11.0738151,0 11.9560995,0.897956369 11.9560995,2.00564169 L11.9474262,2.16857402 C12.8154358,2.52052079 13.6536505,3.10521908 14.3982383,3.87807132 C15.2598324,4.77237143 15.7643314,5.95615219 15.9194472,7.47478499 L15.9194472,12.9530263 L17.110036,15.0509445 C17.5095265,15.7167459 17.6377183,16.2749986 17.3257968,16.7576931 C17.0403571,17.1994072 16.5294845,17.3525518 15.8350964,17.3412244 L13.1652799,17.3417555 C12.8549424,18.85959 11.5332274,20 9.94980414,20 C8.36638086,20 7.04466588,18.85959 6.73432835,17.3417555 L3.77764595,17.3412244 L3.72235669,17.3388521 C3.09539086,17.2849519 2.6282251,16.9815541 2.52321251,16.3980734 C2.45200959,16.0024491 2.54550135,15.5756677 2.79146293,15.0675726 L4.01624036,12.8871114 L4.01880221,7.41484929 C4.12578521,6.20521083 4.57841144,5.07753145 5.36675672,4.0436623 C6.03387517,3.16877511 6.98677948,2.52517246 8.02078708,2.15401297 C8.01662368,2.10512435 8.01482476,2.05547904 8.01482476,2.00564169 C8.01482476,0.897956369 8.89710916,0 9.98546213,0 Z M11.8025327,17.3422137 L8.09707557,17.3422137 C8.37210013,18.1126198 9.09781066,18.6629055 9.94980414,18.6629055 C10.8017976,18.6629055 11.5275081,18.1126198 11.8025327,17.3422137 Z M10.0815452,3.12397089 C8.72815253,3.12397089 7.23880206,3.76947015 6.40463611,4.86343046 C5.76697658,5.69968397 5.41116271,6.58616367 5.32991538,7.47478499 L5.32991538,13.0648706 C5.32991538,13.1812593 5.30006071,13.2956317 5.24330449,13.3966743 L3.95167509,15.693396 C3.89083954,15.8198362 3.85259204,15.9240447 3.83205632,16.0041304 L15.8455449,16.0042146 C15.9671736,16.0061838 16.0586311,16.0014725 16.1220735,15.9985769 C16.0894627,15.9259816 16.0429416,15.8378504 15.9806338,15.7337983 L14.6937782,13.4666494 C14.6360709,13.3649821 14.6056889,13.2496401 14.6056889,13.1322274 L14.6093789,7.54554741 C14.4878881,6.38390365 14.1034843,5.48192009 13.4601893,4.81420571 C12.4192675,3.73377068 11.1975803,3.12397089 10.0815452,3.12397089 Z M9.98546213,1.33709446 C9.68091977,1.33709446 9.42478227,1.54802154 9.35038998,1.83416683 C9.59577409,1.80261438 9.84002218,1.78687644 10.0815452,1.78687644 C10.2594993,1.78687644 10.4380858,1.79772996 10.6167735,1.81906594 C10.5378669,1.54127232 10.2850925,1.33709446 9.98546213,1.33709446 Z"/>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown dropdown-large">
+                    <a href="#">
+                        <div class="me-2">
+                            <svg width="24px" height="24px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#000000"><path d="M14.5 2h-13l-.5.5v9l.5.5H4v2.5l.854.354L7.707 12H14.5l.5-.5v-9l-.5-.5zm-.5 9H7.5l-.354.146L5 13.293V11.5l-.5-.5H2V3h12v8z"/></svg>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="user-box">
+            <div class="d-flex align-items-center">
+                <img src="https://cdn.pixabay.com/photo/2020/07/14/13/07/icon-5404125_960_720.png" alt="">
+                <div class="user-info ps-3">
+                    <p class="user-name mb-0">Test </p>
+                    <p class="designattion mb-0">Web Designer </p>
+                </div>
+            </div>
+        </div>
+    </nav>
+  </div>

@@ -1,0 +1,30 @@
+::ng-deep.add-product-custom{
+    width: 50%;
+    // height: 100%;
+    // right: 0px;
+    // min-width: 650px;
+    .add_product_modal{
+        padding: 20px;
+        .modal_header{
+            font-size: 20px;
+            color: black;
+            padding: 0;
+        }
+        .modal-body{
+            padding: 15px 0px;
+            .form-filed{
+                mat-form-field{
+                    width: 100%;
+                }
+                .example-radio-group {
+                    display: flex;
+                    flex-direction: column;
+                  }
+                  
+                  .example-radio-button {
+                    margin: 5px;
+                  }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+<!-- <ul class="mystyle-products">
+    <li class="product" *ngFor="let item of itemCard">
+        <a href="#">
+            <span class="onsale">{{item.name}}</span>
+            <img alt="" class="attachment-shop_catalog " src="{{item.img}}" />
+            <h3>{{item.heading}}</h3>
+            <span class="price">
+                <del> <span class="amount">{{item.priceMrp}}</span> </del>
+                <ins> <span class="amount">{{item.price}}</span> </ins>
+                <span class="sale-tag sale-tag-square">{{item.discount}}</span>
+            </span>
+        </a>
+    </li>
+</ul> -->
+
+<div class="card_loop">
+    <div class="card"  *ngFor="let data of card">
+        <img src="{{data.img}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{data.title}}</h5>
+          <p class="card-text">{{data.content}}</p>
+          <a href="#" class="btn btn-primary">{{data.link}}</a>
+        </div>
+    </div>
+</div>
+
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>supervised_user_circle</mat-icon>
+  </button>
+  <span>My App</span>
+  <span class="example-spacer"></span>
+  <button mat-raised-button color="warn" (click)="addProductComponentDialog()">Add Product</button>
+</mat-toolbar>

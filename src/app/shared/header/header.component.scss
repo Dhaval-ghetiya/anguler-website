@@ -1,0 +1,69 @@
+.topbar{
+    position: fixed;
+    top: 0;
+    // left: 250px;
+    width: calc(100% - 250px);
+    right: 0;
+    height: 60px;
+    background: #fff;
+    border-bottom: 1px solid rgba(228,228,228,0);
+    z-index: 10;
+    box-shadow: 0 .125rem .25rem #00000013!important;
+    &.sidebar_show{
+        width: calc(100% - 70px);
+    }
+    .custom_navbar{
+        width: 100%;
+        height: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+        .mobile-toggle-menu{
+            display: none;
+            @media screen and (max-width: 992px){
+                display: block;
+            }
+        }
+        .search-bar{
+            .search-bar-box{
+                width: 45%;
+                .search-control {
+                    background-color: #f6f6f6;
+                    border: 1px solid #e8e8e8;
+                    padding-left: 2.5rem;
+                }
+                span{
+                    width: 16px;
+                    height: 16px;
+                    display: flex;
+                    align-items: center;
+                    left: 13px;
+                }
+            }
+        }
+        .user-box {
+            display: flex;
+            align-items: center;
+            height: 60px;
+            border-left: 1px solid #f0f0f0;
+            margin-left: 1rem;
+            img{
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                border: 0 solid #e5e5e5;
+                padding: 0;
+            }
+            .user-info{
+                .user-name{
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: #413c3c;
+                }
+                .designattion {
+                    font-size: 13px;
+                    color: #a9a8a8;
+                }
+            }
+        }
+    }
+}

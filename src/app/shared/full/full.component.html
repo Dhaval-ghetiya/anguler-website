@@ -1,0 +1,30 @@
+<!-- <div id="full_container">
+    <div class="full_inner_container">
+        <div id="left_full_container" id="main-sidebar">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div id="right_full_container" id="main-panel">
+            <div id="header">
+                <app-header></app-header>
+            </div>
+            <div id="main_container">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="wrapper full_container">
+    <div class="sidebar" id="main-sidebar">
+        <app-sidebar></app-sidebar>
+        <!-- <div class="sidebar-background"></div> -->
+    </div>
+    <div class="main_panel" id="main-panel">
+        <div class="header">
+            <app-header></app-header>
+        </div>
+        <div class="main_container" id="main-container">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
